@@ -1,11 +1,14 @@
-# mjml-component-boilerplate
+###### a fork from [mjml-component-boilerplate](https://github.com/mjmlio/mjml-component-boilerplate), but for complete EDM creation
 
-A boilerplate to quickly get started when creating your own component.
+## Getting started
+1. install dependencies: `npm install`
+2. rename `/src-sample` to `/src`
+2. on CLI: `npm start`
+3. work on `/src/index.mjml`, all changes will autotranspile and autoreload browser to apply changes
 
-* Clone the repo
-* `npm install` inside
-* Add your component inside `components` folder
-* Add your component route to `.mjmlconfig` (make sure to link the one in the /lib folder)
-* Use your own component in `index.mjml` (or uncomment the `mj-column-image-text` if you want to test the one already created)
-* `npm run build` to build, or `npm start` if you want to watch recompile on each file change
-* Result will be in `index.html`
+output folder is on `./src/output`
+
+## What is has:
+aside from what the original repo has, the following are added:
+* [browser-sync](https://browsersync.io/docs/gulp) to autoreload browser
+* [gulp-mjml](https://github.com/mjmlio/gulp-mjml) to transpile `index.mjml` -> `index.html`

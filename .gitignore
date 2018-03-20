@@ -3,3 +3,5 @@
 lib/**.js
 index.html
 node_modules
+
+src/*
